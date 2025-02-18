@@ -106,6 +106,9 @@ button {
 .sect-2 {
   height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
 }
 .sect-2-container {
   display: flex;
@@ -114,10 +117,19 @@ button {
   border-left: 2px solid #63A4AA;
   border-bottom: 2px solid  #63A4AA;
   padding: 20px;
+  gap: 25px;
+  width: 30%;
 }
 
 .sect-2-container h1, .sect-2-container p {
   color: #63A4AA;
+}
+
+.sect-2-container h1 {
+  font-size: 12px;
+}
+.sect-2-container p {
+  font-size: 10px;
 }
 
 .sect-2 {
@@ -134,18 +146,28 @@ button {
   gap: 200px;
 }
 .image-container {
-  height: 80vh;
-  width: 60%;
+  height: 55vh;
+  width: 35%;
   background-image: url(/image/about-us-2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  border-radius: 25px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
+  position: absolute;
+  left: 200px;
 }
-/* .color-bg {
+.color-bg {
   background-color: #63A4AA;
   height: 100vh;
-  width: 50%;
-} */
+  width: 30%;;
+}
+
+.sect-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute; */
+  height: 20vh;
+  width: 100%;
+}
