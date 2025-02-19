@@ -154,10 +154,10 @@ button {
   height: 55vh;
   width: 35%;
   /* background-image: url(/image/about-us-2.jpg); */
-  background-position: center;
+  /* background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: scroll; */
   /* margin-left: 50px; */
   position: absolute;
   left: 200px;
