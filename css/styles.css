@@ -11,6 +11,10 @@
 a {
   text-decoration: none;
 }
+a:hover {
+  text-decoration: underline;
+  color: #363D35;
+}
 .header-bg {
   background-image: url(../image/bg-1.jpg);
   background-position: center;
