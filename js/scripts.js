@@ -6,34 +6,46 @@ async function fetchData(url) {
 
       // Awaits promise for a response
       const response = await data.json();
+      console.log(response);
+      console.table(response);
 
-      // logging your response
-      response.map((user) => {
-            console.log(user.name)
-            console.log(user.name)
-            console.log(user.email)
-            console.log(user.username)
-            console.log(user.company.name)
-            console.log(user.address.geo.lat)
-            console.log(user.company.catchPhrase)
-            console.log(user.address.city)
-            console.log(user.address.street)
-            console.log(user.address.suite)
-            console.log(`My name is ${user.address.city}. Contact me on ${user.email} or with my username ${user.username}. My company ${user.company.name} `)
-      })  
+      let clientName = document.querySelector('input').value;
+
+      clientSuite = document.querySelector('option').innerText;
+
+      clientBookingNumber = '96544-6423'
+
+      let head= '';
+      head += `<th>Name</th>
+        <th>Suite</th>
+        <th>Booking Number</th>`  
+
+      let tab = '';
+      response.forEach(user => {
+          tab += `<tr>
+            <td>${user.name}</td>
+             <td>${user.address.street}</td>
+              <td>${user.address.zipcode}</td>   
+          </tr>`  
+      });
+      tab += 
+      `<td>${clientName}</td>
+      <td>${clientSuite}</td>
+      <td>${clientBookingNumber}</td>
+      `
+     document.getElementById('tbody')
+     .innerHTML = tab  
+      clientName = ''
+
+     document.getElementById('head')
+      .innerHTML = head
+
+     
+
 }
-
-
-
-
-// fetchData('https://jsonplaceholder.typicode.com/users')
-
-// fetch('https://jsonplaceholder.typicode.com/users')
-//       .then(response => response.json())
-//       .then(json => console.log(json))
 
 const button = document.getElementById('btn');
 console.log(button)
 button.addEventListener('click', () => {
       fetchData('https://jsonplaceholder.typicode.com/users')
-})
+});

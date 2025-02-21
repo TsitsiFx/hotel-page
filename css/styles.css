@@ -14,6 +14,7 @@ a {
 a:hover {
   text-decoration: underline;
   color: #363D35;
+  cursor: pointer;
 }
 .header-bg {
   background-image: url(../image/bg-1.jpg);
@@ -59,6 +60,56 @@ a:hover {
 .mid-text h1 {
   color: #363D35;
 }
+
+.sect-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute; */
+  height: 20vh;
+  width: 70%;
+  margin: auto;
+  gap: 50px;
+  /* border: 1px solid #63A4AA; */
+  position: absolute;
+  left: 160px;
+  bottom: -60px;
+  background-color: #98BDC1;
+  /* padding-left: 5px;
+  padding-right: 5px; */
+  opacity: 0.3;
+  margin-top: 90px;
+  border-radius: 20px;
+}
+
+
+input{
+  height: 45px;
+  width: 250px;
+  border-radius: 30px;
+  border: 1px #363D35 solid;
+  font-size: 12px;
+  text-align: center;
+}
+
+.sect-form:hover {
+  opacity: 0.8;
+}
+.book-btn {
+  height: 45px;
+  width: 100px;
+  border-radius: 30px;
+  border: 1px #363D35 solid;
+  font-size: 12px;
+}
+
+option, select {
+  width: 250px;
+  height: 47px;
+  border-radius: 30px;
+  border: 1px #363D35 solid;
+  text-align: center;
+}
 .sect-1 {
   height: 70vh;
   width: 100%;
@@ -100,6 +151,9 @@ button {
   border: 2px solid #63A4AA;
   font-size: 8px;
 }
+button:hover {
+  cursor: pointer;
+}
 .card-items h1 {
   font-size: 15px;
   font-weight: bold;
@@ -128,10 +182,11 @@ button {
   padding: 20px;
   gap: 25px;
   width: 30%;
+  border-radius: 12px;
 }
 
 .sect-2-container h1, .sect-2-container p {
-  color: #B7C5D4;
+  /* color: #B7C5D4; */
 }
 
 .sect-2-container h1 {
@@ -165,6 +220,7 @@ button {
   /* margin-left: 50px; */
   position: absolute;
   left: 200px;
+  /* border: 20px solid #B7C5D4 ; */
 }
 .color-bg {
   background-color: #B7C5D4;
@@ -172,14 +228,7 @@ button {
   width: 30%;;
 }
 
-.sect-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* position: absolute; */
-  height: 20vh;
-  width: 100%;
-}
+
 
 .sect-3 {
   display: flex;
@@ -320,4 +369,43 @@ footer {
 }
 small {
   font-size: 12px;
+}
+
+/* JS DISPLAY STYLING */
+#displayFetch {
+  height: 70vh;
+  /* margin-top: 90px; */
+  background-color: #F8F9FA;
+  display: flex;
+  justify-content: center;
+
+}
+table {
+  /* width: 50%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+tr, thead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+tr:hover {
+  background-color: #B7C5D4;
+  cursor: pointer;
+}
+th, td {
+  width: 200px;
+  text-align: center;
+}
+.fake-options {
+  text-decoration: line-through;
+  color: red;
+}
+.only-option {
+  color:#363D35 ;
 }
