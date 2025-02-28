@@ -39,9 +39,6 @@ async function fetchData(url) {
 
      document.getElementById('head')
       .innerHTML = head
-
-     
-
 }
 
 const button = document.getElementById('btn');

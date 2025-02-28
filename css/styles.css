@@ -409,3 +409,15 @@ th, td {
 .only-option {
   color:#363D35 ;
 }
+
+@media (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+}
+
+@media (min-width: 601px) {
+  body {
+    width: 100%;
+  }
+}
